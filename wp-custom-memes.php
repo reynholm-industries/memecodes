@@ -2,7 +2,7 @@
 /*
 Plugin Name: WP Custom Memes
 Plugin URI:
-Description: This is a plugin that lets you create custom messages with the available memes list.
+Description: This is a plugin that lets you create custom messages
 Author: Silvano Alves Vence
 Version: 1.0
 Author URI:
