@@ -9,9 +9,9 @@ Author URI:
 License: GPLv2 or later
 */
 
-register_activation_hook( __FILE__, 'prowp_install' );
+register_activation_hook( __FILE__, 'wp_custom_memes_install' );
 
-function prowp_install() {
+function wp_custom_memes_install() {
     global $wp_version;
 
     if( version_compare( $wp_version, '3.5.1', '<') ) {
@@ -49,7 +49,7 @@ function register_my_tinymce_meme_button( $buttons ) {
 }
 
 function meme_css() {
-    wp_enqueue_style( 'meme-style', plugins_url( 'css/style.css', __FILE__ ) );
+    wp_enqueue_style( 'meme-style', plugins_url( 'css/memes.css', __FILE__ ) );
 }
 
 add_action( 'admin_enqueue_scripts', 'meme_css' );
